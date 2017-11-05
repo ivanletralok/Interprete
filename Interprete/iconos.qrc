@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>if_folder-open_118942.png</file>
+        <file>if_save_173091.png</file>
+        <file>if_player_in_blue_553922.png</file>
+        <file>srcode.png</file>
+        <file>if_Close_2001866.png</file>
+    </qresource>
+</RCC>

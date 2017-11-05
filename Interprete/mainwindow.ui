@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SrCode</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/new/prefix1/srcode.png</normaloff>:/new/prefix1/srcode.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="textoPlano"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Compilar</string>
+    </property>
+    <addaction name="actionAcerca_de_SrCode"/>
+   </widget>
+   <widget class="QMenu" name="menuInformacion">
+    <property name="title">
+     <string>informacion</string>
+    </property>
+    <addaction name="actionAcerde"/>
+   </widget>
+   <widget class="QMenu" name="menuCerra">
+    <property name="title">
+     <string>Cerra</string>
+    </property>
+    <addaction name="actionCerrar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAyuda"/>
+   <addaction name="menuInformacion"/>
+   <addaction name="menuCerra"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAbrir"/>
+   <addaction name="separator"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionAcerca_de_SrCode"/>
+   <addaction name="actionCerrar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/new/prefix1/if_folder-open_118942.png</normaloff>:/new/prefix1/if_folder-open_118942.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/new/prefix1/if_save_173091.png</normaloff>:/new/prefix1/if_save_173091.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de_SrCode">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/new/prefix1/if_player_in_blue_553922.png</normaloff>:/new/prefix1/if_player_in_blue_553922.png</iconset>
+   </property>
+   <property name="text">
+    <string>compilar</string>
+   </property>
+  </action>
+  <action name="actionAcerde">
+   <property name="text">
+    <string>acerde</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="icon">
+    <iconset resource="iconos.qrc">
+     <normaloff>:/new/prefix1/if_Close_2001866.png</normaloff>:/new/prefix1/if_Close_2001866.png</iconset>
+   </property>
+   <property name="text">
+    <string>cerrar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
